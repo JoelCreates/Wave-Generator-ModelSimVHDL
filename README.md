@@ -10,4 +10,18 @@ Therefore, simply subtracting 2 from the number of counts allows for the specifi
 ![image](https://user-images.githubusercontent.com/48869133/165290150-3b63f810-d766-4260-8ef4-2f6a10fa914c.png)
 
 
+# Triangle Wave Generation
+The triangle wave works on a similar basis to the aforementioned square wave explanation, albeit with some alterations.
+- A new signal named "Tri" is added on to each of the states on the state machine, incrementing by a certain number until the counter hits the specified limit N. This number is decremented on the next state to create a triangular wave.
+- Removing the below "process" of state that would set the 12 bits to all 0's or 1's within each state change.
+- Replaing the removed process with the output, using std_logic_vector with the help of VHDL's "to_unsigned" function to convert the incoming "tri" signal into 12 bits through the use of output'length.
+- Since output was set to be 12 bits(11 down to 0 is 12), this allows for tri to also become a 12-bit unsigned integer.
+
+As this is now an unsigned 12 bit integer, running this simply generates a simple triangle wave that would go up and down, following the path of addition and subtraction within each state loop.
+
+# Example of 100kHz Triangle Wave
+![image](https://user-images.githubusercontent.com/48869133/165292461-547f70bb-2459-4f7f-94eb-9b541c06d7be.png)
+
+
+
 
