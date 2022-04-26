@@ -20,7 +20,8 @@ The triangle wave works on a similar basis to the aforementioned square wave exp
 As this is now an unsigned 12 bit integer, running this simply generates a simple triangle wave that would go up and down, following the path of addition and subtraction within each state loop.
 
 # Example of 100kHz Triangle Wave
-![image](https://user-images.githubusercontent.com/48869133/165292695-de869ba8-8435-4384-8bf7-637022981ddb.png)
+![image](https://user-images.githubusercontent.com/48869133/165292799-35e10a90-0f13-44c8-9057-ef40039c5002.png)
+
 
 
 
