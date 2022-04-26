@@ -6,7 +6,8 @@ In order to account for each state change, the period of the intended frequency 
 However, this is not as simple as just inserting 250 into the conditional statement, as doing so results in 2 extra clock cycles being added before a change of state occurs, generating an altogether different frequency compared to the initial specified frequency. This happens due to not accounting for the processes that occurs whenever the threshold number is reached, as the state is toggled to another state along with the counter being reset. 
 Therefore, simply subtracting 2 from the number of counts allows for the specified frequency to be generated. The frequency is determined (when simulating on ModelSim or using an Oscilloscope by other means) by measuring a full period of the generated wave, analysing the time period beneath, then doing 1/T to get its frequency.
 
-# Example of 100kHz Square Wave   
-![image](https://user-images.githubusercontent.com/48869133/165289914-147c7f83-5a8e-456a-a261-d83f50c5cdc1.png)
+# Example of 100kHz Square Wave 
+![image](https://user-images.githubusercontent.com/48869133/165290150-3b63f810-d766-4260-8ef4-2f6a10fa914c.png)
+
 
 
